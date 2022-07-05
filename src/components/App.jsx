@@ -1,37 +1,37 @@
-import { Component } from "react";
-import Section from './Section';
-import Statistics from '/Statistics';
-import FeedbackOptions from "./FeedbackOptions";
-import Notification from "./Notification";
+// import { Component } from "react";
+// import Section from './Section';
+// import Statistics from '/Statistics';
+// import FeedbackOptions from "./FeedbackOptions";
+// import Notification from "./Notification";
 
 
 
 
-export const App = () => {
-  return (
-    <>
-    <Section title="Please leave feedback">
+// export const App = () => {
+//   return (
+    // <>
+    // <Section title="Please leave feedback">
 
-        <FeedbackOptions 
-            // options={options} 
-            // onLeaveFeedback={onLeaveFeedback}>
-        />
+    //     <FeedbackOptions 
+    //         // options={options} 
+    //         // onLeaveFeedback={onLeaveFeedback}>
+    //     />
         
-    </Section>
+    // </Section>
 
-    <Section title="Statistic">
+    // <Section title="Statistic">
         
-        <Statistics 
-            good={good}
-            neutral={neutral} 
-            bad={bad} 
-            total={total} 
-            positivePercentage={positivePercentage}
-        />
+    //     <Statistics 
+    //         good={good}
+    //         neutral={neutral} 
+    //         bad={bad} 
+    //         total={total} 
+    //         positivePercentage={positivePercentage}
+    //     />
           
-          <Notification message="There is no feedback"/>
+    //       <Notification message="There is no feedback"/>
 
-      </Section>
-    </>
-  );
-};
+    //   </Section>
+    // </>
+//   );
+// };
