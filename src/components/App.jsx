@@ -1,16 +1,37 @@
+import { Component } from "react";
+import Section from './Section';
+import Statistics from '/Statistics';
+import FeedbackOptions from "./FeedbackOptions";
+import Notification from "./Notification";
+
+
+
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+    <Section title="Please leave feedback">
+
+        <FeedbackOptions 
+            // options={options} 
+            // onLeaveFeedback={onLeaveFeedback}>
+        />
+        
+    </Section>
+
+    <Section title="Statistic">
+        
+        <Statistics 
+            good={good}
+            neutral={neutral} 
+            bad={bad} 
+            total={total} 
+            positivePercentage={positivePercentage}
+        />
+          
+          <Notification message="There is no feedback"/>
+
+      </Section>
+    </>
   );
 };
